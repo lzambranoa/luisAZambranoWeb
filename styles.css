@@ -30,10 +30,7 @@ h2 {
     color: var(--principal-title-color) !important;
 }
 
-h3 {
-    font-size: 2rem;
-    color: var(--principal-title-color) !important;
-}
+
 
 .container-header {
     display: flex;
@@ -160,14 +157,46 @@ nav .nav-links {
 }
 
 /*** Estilos para la sección de servicios ***/
+.section-cards-servicios {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin: 16px 0;;
+    align-items: stretch;
+}
+
+@media (min-width: 768px) {
+    .section-cards-servicios {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 992px) {
+    .section-cards-servicios {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 1200px) {
+    .section-cards-servicios {
+        grid-template-columns: repeat(4, 1fr);
+    }
+ }
+    
 .card-servicios {
-    background-color: var(--background-color);
+    background-color: #F4F4F9;
     border: 1px solid var(--border-color);
     border-radius: 8px;
     padding: 20px;
     margin-top: 10px;
     text-align: left;
     transition: transform 0.3s ease;
+}
+
+.card-servicios h3 {
+    color: var(--principal-title-color);
+    margin-top: 15px;
+    margin-bottom: 10px;
 }
 
 .card-servicios:hover {
@@ -181,11 +210,100 @@ nav .nav-links {
     border-radius: 10%;
     display: flex;
     justify-content: center;
-    align-items: start;
+    align-items: center;
     background-color: var(--button-color);
 }
 
-.icon-servicios img {
-    max-width: 80%;
-    max-height: 80%;
+
+.icon-servicios svg {
+    color: var(--background-color);
 }
+
+
+
+/**/* Estilos para la sección de experiencia ***/
+.section-cards-experiencia {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin: 16px 0;
+    align-items: stretch;
+}
+
+@media (min-width: 768px) {
+    .section-cards-experiencia {
+        display: grid;
+        gap: 16px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1200px) {
+    .section-cards-experiencia {
+        display: grid;
+        gap: 16px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}   
+
+.card-experiencia {
+   background-color: #F4F4F9;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 10px;
+    transition: transform 0.3s ease; 
+}
+
+.card-experiencia h3 {
+    color: var(--principal-title-color);
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.card-experiencia:hover {
+    transform: translateY(-5px);
+}
+
+
+.icon-experiencia {
+    width: 60px;
+    height: 60px;
+    background-color: var(--primary-color);
+    border-radius: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--button-color);
+}
+
+.icon-experiencia svg {
+    color: var(--background-color);
+}
+
+
+/* Estilos para el footer */
+footer {
+    background-color: var(--background-footer-color);
+    color: #fff;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+
+
+footer a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.title-footer {
+    margin-bottom: 15px;
+    color: #fff;
+}
+
