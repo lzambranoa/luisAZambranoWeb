@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,30 +11,50 @@
     <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 
     <!--Bootstrap CSS-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
+
 <body>
     <header class="container">
-        <section class="container-header">
-            <article class="logo">
-                <img src="./assets/logo_luis_a_zambrano.png" alt="Carpinteria Metalica Luis A Zambrano Logo">
+        <section class="container-header navbar navbar-expand-lg">
+            <!-- Logo -->
+            <article class="logo d-flex align-items-center">
+                <img src="./assets/logo_luis_a_zambrano.png" alt="Carpintería Metálica Luis A Zambrano Logo"
+                    class="me-2" />
             </article>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#servicios">Servicios</a></li>
-                    <li><a href="#proyectos">Proyectos</a></li>
-                    <li><a href="#nosotros">Nosotros</a></li>
-                    <li><a href="#contact">Contacto</a></li>
+
+            <!-- Botón hamburguesa -->
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menú + botón experiencia -->
+            <div class="collapse navbar-collapse justify-content-end align-items-center" id="navbarNav">
+                <ul class="navbar-nav nav-links me-3">
+                    <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./servicios.html">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
                 </ul>
-            </nav>
-            <article class="experience-button">
-                40 años de experiencia
-            </article>
+
+                <!-- Botón experiencia (dentro del header para escritorio) -->
+                <article class="experience-button d-none d-lg-block">
+                    40 años de experiencia
+                </article>
+            </div>
         </section>
+
+        <!-- Botón experiencia (versión móvil, debajo del header) -->
+        <article class="experience-button d-lg-none text-center mt-2">
+            40 años de experiencia
+        </article>
     </header>
 
     <main>
@@ -44,7 +65,8 @@
             </video>
             <section class="hero-content">
                 <h1>Carpintería Metálica Luis A Zambrano</h1>
-                <p>Su socio experto en la fabricación e intalación de puertas, portones, estructuras y soluciones metálicas a la medida</p>
+                <p>Su socio experto en la fabricación e intalación de puertas, portones, estructuras y soluciones
+                    metálicas a la medida</p>
                 <button class="experience-button">Solicite su Presupuesto sin Compromiso</button>
             </section>
         </section>
@@ -54,7 +76,14 @@
             <section class="section-cards-servicios">
                 <article class="card-servicios">
                     <div class="icon-servicios">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-door"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M14 12v.01" /><path d="M3 21h18" /><path d="M6 21v-16a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v16" /></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-door">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M14 12v.01" />
+                            <path d="M3 21h18" />
+                            <path d="M6 21v-16a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v16" />
+                        </svg>
                     </div>
                     <h3>
                         Puertas y Portones
@@ -65,7 +94,14 @@
                 </article>
                 <article class="card-servicios">
                     <div class="icon-servicios">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-fence"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 12v4h16v-4z" /><path d="M6 16v4h4v-4m0 -4v-6l-2 -2l-2 2v6" /><path d="M14 16v4h4v-4m0 -4v-6l-2 -2l-2 2v6" /></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-fence">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M4 12v4h16v-4z" />
+                            <path d="M6 16v4h4v-4m0 -4v-6l-2 -2l-2 2v6" />
+                            <path d="M14 16v4h4v-4m0 -4v-6l-2 -2l-2 2v6" />
+                        </svg>
                     </div>
                     <h3>
                         Rejas y Barandas
@@ -76,7 +112,14 @@
                 </article>
                 <article class="card-servicios">
                     <div class="icon-servicios">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-building-warehouse"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 21v-13l9 -4l9 4v13" /><path d="M13 13h4v8h-10v-6h6" /><path d="M13 21v-9a1 1 0 0 0 -1 -1h-2a1 1 0 0 0 -1 1v3" /></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-building-warehouse">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M3 21v-13l9 -4l9 4v13" />
+                            <path d="M13 13h4v8h-10v-6h6" />
+                            <path d="M13 21v-9a1 1 0 0 0 -1 -1h-2a1 1 0 0 0 -1 1v3" />
+                        </svg>
                     </div>
                     <h3>Estructuras Metálicas
                     </h3>
@@ -86,13 +129,20 @@
                 </article>
                 <article class="card-servicios">
                     <div class="icon-servicios">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-tool"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 10h3v-3l-3.5 -3.5a6 6 0 0 1 8 8l6 6a2 2 0 0 1 -3 3l-6 -6a6 6 0 0 1 -8 -8l3.5 3.5" /></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-tool">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path
+                                d="M7 10h3v-3l-3.5 -3.5a6 6 0 0 1 8 8l6 6a2 2 0 0 1 -3 3l-6 -6a6 6 0 0 1 -8 -8l3.5 3.5" />
+                        </svg>
                     </div>
                     <h3>
                         Soluciones a la medida
                     </h3>
                     <p>
-                        Desarrollamos proyectos personalizados adaptados a sus necesidades específicas con la máxima precisión.
+                        Desarrollamos proyectos personalizados adaptados a sus necesidades específicas con la máxima
+                        precisión.
                     </p>
                 </article>
             </section>
@@ -105,24 +155,55 @@
                 <!--Contenido de proyectos destacados-->
                 <article class="card-experiencia">
                     <div class="icon-experiencia">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-clock"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" /><path d="M12 7v5l3 3" /></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-clock">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" />
+                            <path d="M12 7v5l3 3" />
+                        </svg>
                     </div>
                     <h3>40 años de experiencia</h3>
-                    <p>Nuestra trayectoria es su mejor garantia de un trabajo bien hecho, con conocimiento y maestria</p>
+                    <p>Nuestra trayectoria es su mejor garantia de un trabajo bien hecho, con conocimiento y maestria
+                    </p>
                 </article>
                 <article class="card-experiencia">
                     <div class="icon-experiencia">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-ruler-2-off"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12.03 7.97l4.97 -4.97l4 4l-5 5m-2 2l-7 7l-4 -4l7 -7" /><path d="M16 7l-1.5 -1.5" /><path d="M10 13l-1.5 -1.5" /><path d="M7 16l-1.5 -1.5" /><path d="M3 3l18 18" /></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-ruler-2-off">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M12.03 7.97l4.97 -4.97l4 4l-5 5m-2 2l-7 7l-4 -4l7 -7" />
+                            <path d="M16 7l-1.5 -1.5" />
+                            <path d="M10 13l-1.5 -1.5" />
+                            <path d="M7 16l-1.5 -1.5" />
+                            <path d="M3 3l18 18" />
+                        </svg>
                     </div>
                     <h3>Servicio Integral</h3>
-                    <p>Lo acompañamos desde el diseño inicial hasta la intalación final, asegurandop resultados impecables.</p>
+                    <p>Lo acompañamos desde el diseño inicial hasta la intalación final, asegurandop resultados
+                        impecables.</p>
                 </article>
                 <article class="card-experiencia">
                     <div class="icon-experiencia">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-circle-dashed-check"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.56 3.69a9 9 0 0 0 -2.92 1.95" /><path d="M3.69 8.56a9 9 0 0 0 -.69 3.44" /><path d="M3.69 15.44a9 9 0 0 0 1.95 2.92" /><path d="M8.56 20.31a9 9 0 0 0 3.44 .69" /><path d="M15.44 20.31a9 9 0 0 0 2.92 -1.95" /><path d="M20.31 15.44a9 9 0 0 0 .69 -3.44" /><path d="M20.31 8.56a9 9 0 0 0 -1.95 -2.92" /><path d="M15.44 3.69a9 9 0 0 0 -3.44 -.69" /><path d="M9 12l2 2l4 -4" /></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-circle-dashed-check">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M8.56 3.69a9 9 0 0 0 -2.92 1.95" />
+                            <path d="M3.69 8.56a9 9 0 0 0 -.69 3.44" />
+                            <path d="M3.69 15.44a9 9 0 0 0 1.95 2.92" />
+                            <path d="M8.56 20.31a9 9 0 0 0 3.44 .69" />
+                            <path d="M15.44 20.31a9 9 0 0 0 2.92 -1.95" />
+                            <path d="M20.31 15.44a9 9 0 0 0 .69 -3.44" />
+                            <path d="M20.31 8.56a9 9 0 0 0 -1.95 -2.92" />
+                            <path d="M15.44 3.69a9 9 0 0 0 -3.44 -.69" />
+                            <path d="M9 12l2 2l4 -4" />
+                        </svg>
                     </div>
                     <h3>Garantia de Calidad</h3>
-                    <p>Utilizamos solo los mejores materiales y tecnicas para asegurar la durabilidad y seguridad en cada proyecto.</p>
+                    <p>Utilizamos solo los mejores materiales y tecnicas para asegurar la durabilidad y seguridad en
+                        cada proyecto.</p>
                 </article>
             </section>
         </section>
@@ -133,10 +214,17 @@
             <section class="row">
                 <div class="col-12 col-md-4 col-lg-6">
                     <div class="d-flex align-items-center">
-                        <svg style="color: #D46A1E;" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-star"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z" /></svg>
-                        <h3 class="ms-1">Luis A Zambrano</h3>
+                        <svg style="color: #D46A1E;" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24" fill="currentColor"
+                            class="icon icon-tabler icons-tabler-filled icon-tabler-star">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path
+                                d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z" />
+                        </svg>
+                        <h3 class="ms-1 title-footer">Luis A Zambrano</h3>
                     </div>
-                    <p>Forjando calidad y confianza en carpintería metálica por más de 40 años. Soluciones a la medida para tus proyectos</p>
+                    <p>Forjando calidad y confianza en carpintería metálica por más de 40 años. Soluciones a la medida
+                        para tus proyectos</p>
                 </div>
                 <div class="col-12 col-md-4 col-lg-3">
                     <h3 class="title-footer">Navegación</h3>
@@ -145,7 +233,7 @@
                             <a href="">Inicio</a>
                         </li>
                         <li>
-                            <a href="">Servicios</a>
+                            <a href="./servicios.html">Servicios</a>
                         </li>
                         <li>
                             <a href="">Proyectos</a>
@@ -159,20 +247,36 @@
                     </ul>
                 </div>
                 <div class="col-12 col-md-4 col-lg-3">
-                    <h3>Contacto</h3>
+                    <h3 class="title-footer">Contacto</h3>
                     <p>Carrera 7D # 156-81</p>
                     <p>zamsalamanca@hotmail.com</p>
                     <p>+57 310 7674581</p>
                 </div>
             </section>
-            <section class="d-flex justify-content-between align-items-center mt-4 pt-4 border-top-footer">
+            <section class="d-block d-lg-flex justify-content-around mt-4 pt-4 credits-footer">
                 <div>
                     <p>&copy; 2024 Carpintería Metálica Luis A Zambrano. Todos los derechos reservados.
                     </p>
                 </div>
                 <div>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-brand-facebook"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 2a1 1 0 0 1 .993 .883l.007 .117v4a1 1 0 0 1 -.883 .993l-.117 .007h-3v1h3a1 1 0 0 1 .991 1.131l-.02 .112l-1 4a1 1 0 0 1 -.858 .75l-.113 .007h-2v6a1 1 0 0 1 -.883 .993l-.117 .007h-4a1 1 0 0 1 -.993 -.883l-.007 -.117v-6h-2a1 1 0 0 1 -.993 -.883l-.007 -.117v-4a1 1 0 0 1 .883 -.993l.117 -.007h2v-1a6 6 0 0 1 5.775 -5.996l.225 -.004h3z" /></svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-instagram"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 8a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" /><path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" /><path d="M16.5 7.5v.01" /></svg>
+                    <a href="" class="redes-sociales"">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-brand-facebook">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path
+                                d="M18 2a1 1 0 0 1 .993 .883l.007 .117v4a1 1 0 0 1 -.883 .993l-.117 .007h-3v1h3a1 1 0 0 1 .991 1.131l-.02 .112l-1 4a1 1 0 0 1 -.858 .75l-.113 .007h-2v6a1 1 0 0 1 -.883 .993l-.117 .007h-4a1 1 0 0 1 -.993 -.883l-.007 -.117v-6h-2a1 1 0 0 1 -.993 -.883l-.007 -.117v-4a1 1 0 0 1 .883 -.993l.117 -.007h2v-1a6 6 0 0 1 5.775 -5.996l.225 -.004h3z" />
+                        </svg>
+                    </a>
+                    <a href="" class="redes-sociales">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-brand-instagram">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M4 8a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" />
+                            <path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+                            <path d="M16.5 7.5v.01" />
+                        </svg>
+                    </a>
                 </div>
             </section>
 
@@ -180,7 +284,9 @@
     </footer>
 
     <!--Bootstrap JS Bundle-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
-</html>
 
+</html>
