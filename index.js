@@ -13,7 +13,7 @@ const proyectos = [
   { img: "/assets/img/estructura_fachada.jpg", titulo: "Estructura para fachada acristalada", categoria: "estructuras" },
   { img: "/assets/img/puerta_corredera.jpg", titulo: "Puerta corredera de acero para finca rústica", categoria: "puertas" },
   { img: "/assets/img/candelabro.jpg", titulo: "Figura metálica decorativa", categoria: "medida" },
-  { img: "/assets/img/cocina_industrial.jpg", titulo: "Cocinas integrales tipo industrial", categoria: "medida" },
+  { img: "/assets/img/cocina industrial.jpg", titulo: "Cocinas integrales tipo industrial", categoria: "medida" },
   { img: "/assets/img/silla_metalica.jpg", titulo: "Estructura para mueble tipo industrial", categoria: "medida" },
 ];
 
