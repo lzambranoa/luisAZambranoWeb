@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="./assets/logo_luis_a_zambrano.png">
-    <title>Contacto - Luis A Zambrano</title>
+    <title>Proyectos - Luis A Zambrano</title>
 
     <link rel="stylesheet" href="styles.css">
 
@@ -18,9 +19,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
+
 <body>
 
-     <header class="container">
+    <header class="container">
         <section class="container-header navbar navbar-expand-lg">
             <!-- Logo -->
             <article class="logo d-flex align-items-center">
@@ -39,7 +41,7 @@
                 <ul class="navbar-nav nav-links me-3">
                     <li class="nav-item"><a class="nav-link" href="/index.html">Inicio</a></li>
                     <li class="nav-item"><a class="nav-link" href="/servicios.html">Servicios</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/proyectos.html">Proyectos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
                     <li class="nav-item"><a class="nav-link" href="/contacto.html">Contacto</a></li>
                 </ul>
 
@@ -49,95 +51,32 @@
                 </article>
             </div>
         </section>
-
-        <!-- Botón experiencia (versión móvil, debajo del header) -->
-        <article class="experience-button d-lg-none text-center mt-2">
-            40 años de experiencia
-        </article>
     </header>
 
-    <main class="mt-5">
-        <section class="hero-contacto">
-    <h1>Demos vida a su proyecto:<br>Solicite un Presupuesto de Carpintería Metálica.</h1>
-  </section>
+    <main class="proyectos container">
+        <!-- Categorías -->
+        <nav class="categorias">
+            <button class="activo" data-category="todos">Todos</button>
+            <button data-category="puertas">Puertas y Vallas</button>
+            <button data-category="estructuras">Estructuras Metálicas</button>
+            <button data-category="pergolas">Pérgolas y Porches</button>
+            <button data-category="medida">Proyectos a Medida</button>
+        </nav>
 
-  <!-- Contact Section -->
-  <section class="container py-5">
-    <div class="row g-4">
-      <!-- Contact Info -->
-      <div class="col-md-5">
-        <h5 class="fw-bold text-dark mb-3">Contacto Directo</h5>
-        <p class="text-muted">Con más de 30 años de experiencia, estamos listos para asesorarle. Contáctenos directamente o visite nuestro taller.</p>
+        <!-- Galería -->
+        <section id="galeria" class="galeria">
+            <!-- Los proyectos se generan dinámicamente con JS -->
+        </section>
 
-        <div class="contact-card mb-3 d-flex justify-content-between align-items-center">
-          <div class="d-flex align-items-center">
-            <i class="bi bi-telephone-fill contact-icon"></i>
-            <div>
-              <div class="fw-semibold">+57 305 873 7018</div>
-              <small class="text-muted">Teléfono / WhatsApp</small>
-            </div>
-          </div>
-          <a href="https://wa.me/573058737018?text=Hola!%20Quisiera%20solicitar%20un%20presupuesto%20de%20carpinter%C3%ADa%20met%C3%A1lica." 
-                target="_blank" class="btn btn-outline-warning btn-sm">Llamar</a>
-        </div>
-
-        <div class="contact-card mb-4 d-flex justify-content-between align-items-center">
-          <div class="d-flex align-items-center">
-            <i class="bi bi-envelope-fill contact-icon"></i>
-            <div>
-              <div class="fw-semibold">lezaam@hotmail.com</div>
-              <small class="text-muted">Correo Electrónico</small>
-            </div>
-          </div>
-          <a href="mailto:lezaam@hotmail.com" class="btn btn-outline-warning btn-sm">Email</a>
-        </div>
-
-        <!-- Mapa -->
-        <h6 class="fw-bold mb-2">Visite Nuestro Taller</h6>
-        <div class="rounded overflow-hidden shadow-sm" style="height: 230px;">
-          <iframe
-            src="https://www.google.com/maps?q=Carrera+7D+con+calle+156,+Bogotá,+Colombia&output=embed"
-            width="100%" height="230" style="border:0;" allowfullscreen="" loading="lazy">
-          </iframe>
-        </div>
-      </div>
-
-      
-       <!-- Formulario -->
-      <div class="col-md-7">
-        <div class="contact-card">
-          <h5 class="fw-bold text-dark mb-2">Cuéntenos sobre su idea</h5>
-          <p class="text-muted mb-3">Complete el formulario y nos pondremos en contacto.</p>
-          <hr style="width: 60px; border: 2px solid #ff7a00; opacity: 1;">
-
-          <!-- FORMULARIO CON MAILTO -->
-          <form action="mailto:lezaam@hotmail.com" method="POST" enctype="text/plain">
-            <div class="mb-3">
-              <label class="form-label">Nombre Completo</label>
-              <input type="text" name="Nombre Completo" class="form-control" placeholder="John Doe" required>
-            </div>
-
-            <div class="mb-3">
-              <label class="form-label">Correo Electrónico</label>
-              <input type="email" name="Correo Electrónico" class="form-control" placeholder="usted@email.com" required>
-            </div>
-
-            <div class="mb-3">
-              <label class="form-label">Teléfono</label>
-              <input type="tel" name="Teléfono" class="form-control" placeholder="+57 300 000 0000">
-            </div>
-
-            <div class="mb-3">
-              <label class="form-label">¿En qué podemos ayudarle?</label>
-              <textarea name="Mensaje" class="form-control" rows="3" placeholder="Describa su proyecto o consulta..." required></textarea>
-            </div>
-
-            <button type="submit" class="btn-contact">Enviar Solicitud y Recibir Asesoría</button>
-          </form>
-    </div>
-  </section>
+        <!-- Llamada a la acción -->
+        <section class="llamada">
+            <h2>¿Tienes un proyecto en mente?</h2>
+            <p>Permítenos dar forma a tus ideas con la robustez y elegancia del metal.</p>
+            <button class="btn-contacto" id="btnContacto" onclick="irAContacto()">Cuéntanos tu Idea</button>
+        </section>
     </main>
-    
+
+
     <footer>
         <section class="container">
             <section class="row">
@@ -162,10 +101,10 @@
                             <a href="/index.html">Inicio</a>
                         </li>
                         <li>
-                            <a href="/servicios.html">Servicios</a>
+                            <a href="/">Servicios</a>
                         </li>
                         <li>
-                            <a href="/proyectos.html">Proyectos</a>
+                            <a href="">Proyectos</a>
                         </li>
                         <li>
                             <a href="/contacto.html">Contacto</a>
@@ -208,12 +147,13 @@
 
         </section>
     </footer>
+    <script src="index.js"></script>
 
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.js"></script>
+    
     <!--Bootstrap JS Bundle-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
-        </script>
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

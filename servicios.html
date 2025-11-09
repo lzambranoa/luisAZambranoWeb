@@ -17,7 +17,7 @@
 
     <!--Bootstrap CSS-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 
 <body>
@@ -40,7 +40,7 @@
                 <ul class="navbar-nav nav-links me-3">
                     <li class="nav-item"><a class="nav-link" href="/index.html">Inicio</a></li>
                     <li class="nav-item"><a class="nav-link" href="/servicios.html">Servicios</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/proyectos.html">Proyectos</a></li>
                     <li class="nav-item"><a class="nav-link" href="/contacto.html">Contacto</a></li>
                 </ul>
 
@@ -82,8 +82,8 @@
                             personalizados. Utlizamos materiales de alta durabilidad, garantizando seguridad y personalización para cada proyecto.
                             Ideal para ampliaciones industriales, comerciales y residenciales.
                             <div class="mt-2">
-                                <button class="experience-button me-1">Pedir Cotización para este servicio</button>
-                                <button type="button" class="btn btn-secondary">Ver Proyectos Relacionados</button>
+                                <button class="experience-button me-1" onclick="irAContacto()">Pedir Cotización para este servicio</button>
+                                <button type="button" class="btn btn-secondary" onclick="irAProyectos()">Ver Proyectos Relacionados</button>
                             </div>
                         </div>
                     </div>
@@ -101,45 +101,45 @@
                             Utilizamos materiales de alta calidad para garantizar durabilidad y seguridad. 
                             Disponemos de una variedad de estilos y acabados para adaptarnos a las necesidades estéticas y funcionales de cada cliente.
                             <div class="mt-2">
-                                <button class="experience-button me-0 me-lg-1 mb-1 mb-lg-0">Pedir Cotización para este servicio</button>
-                                <button type="button" class="btn btn-secondary">Ver Proyectos Relacionados</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingTwo">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                            <h3 class="title-acordeon">Escaleras y Barandas Metálicas</h3>
-                        </button>
-                    </h2>
-                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
-                        data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Fabricamos e instalamos escaleras y barandas metálicas personalizadas para interiores y exteriores. 
-                            Utilizamos materiales resistentes y acabados de alta calidad para garantizar seguridad y durabilidad.
-                            <div class="mt-2">
-                                <button class="experience-button me-0 me-lg-1 mb-1 mb-lg-0">Pedir Cotización para este servicio</button>
-                                <button type="button" class="btn btn-secondary">Ver Proyectos Relacionados</button>
+                                <button class="experience-button me-0 me-lg-1 mb-1 mb-lg-0" onclick="irAContacto()">Pedir Cotización para este servicio</button>
+                                <button type="button" class="btn btn-secondary" onclick="irAProyectos()">Ver Proyectos Relacionados</button>
                         </div>
                     </div>
                 </div>
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="flush-headingThree">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseThree" aria-expanded="false"
-                            aria-controls="flush-collapseThree">
+                            data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                            <h3 class="title-acordeon">Escaleras y Barandas Metálicas</h3>
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Fabricamos e instalamos escaleras y barandas metálicas personalizadas para interiores y exteriores. 
+                            Utilizamos materiales resistentes y acabados de alta calidad para garantizar seguridad y durabilidad.
+                            <div class="mt-2">
+                                <button class="experience-button me-0 me-lg-1 mb-1 mb-lg-0" onclick="irAContacto()">Pedir Cotización para este servicio</button>
+                                <button type="button" class="btn btn-secondary" onclick="irAProyectos()">Ver Proyectos Relacionados</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseFour" aria-expanded="false"
+                            aria-controls="flush-collapseFour">
                             <h3 class="title-acordeon">Pérgolas y Estructuras</h3>
                         </button>
                     </h2>
-                    <div id="flush-collapseThree" class="accordion-collapse collapse"
-                        aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                    <div id="flush-collapseFour" class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
                         <div class="accordion-body">Realizamos
                             diseño, fabricación e instalación de pérgolas y estructuras metálicas personalizadas. 
                             Utilizamos materiales resistentes a la intemperie para garantizar durabilidad y estética. 
                             Ofrecemos una variedad de estilos y acabados para adaptarnos a las necesidades de cada cliente.
                             <div class="mt-2">
-                                <button class="experience-button me-0 me-lg-1 mb-1 mb-lg-0">Pedir Cotización para este servicio</button>
-                                <button type="button" class="btn btn-secondary">Ver Proyectos Relacionados
+                                <button class="experience-button me-0 me-lg-1 mb-1 mb-lg-0" onclick="irAContacto()">Pedir Cotización para este servicio</button>
+                                <button type="button" class="btn btn-secondary" onclick="irAProyectos()">Ver Proyectos Relacionados
                         </div>
                     </div>
                 </div>
@@ -172,10 +172,10 @@
                             <a href="/index.html">Inicio</a>
                         </li>
                         <li>
-                            <a href="/">Servicios</a>
+                            <a href="/servicios.html">Servicios</a>
                         </li>
                         <li>
-                            <a href="">Proyectos</a>
+                            <a href="/proyectos.html">Proyectos</a>
                         </li>
                         <li>
                             <a href="/contacto.html">Contacto</a>
@@ -195,15 +195,15 @@
                     </p>
                 </div>
                 <div>
-                    <a href="" class="redes-sociales"">
-                        <svg xmlns=" http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                        fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-brand-facebook">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                        <path
-                            d="M18 2a1 1 0 0 1 .993 .883l.007 .117v4a1 1 0 0 1 -.883 .993l-.117 .007h-3v1h3a1 1 0 0 1 .991 1.131l-.02 .112l-1 4a1 1 0 0 1 -.858 .75l-.113 .007h-2v6a1 1 0 0 1 -.883 .993l-.117 .007h-4a1 1 0 0 1 -.993 -.883l-.007 -.117v-6h-2a1 1 0 0 1 -.993 -.883l-.007 -.117v-4a1 1 0 0 1 .883 -.993l.117 -.007h2v-1a6 6 0 0 1 5.775 -5.996l.225 -.004h3z" />
+                    <a class="redes-sociales" id="linkFacebook" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-brand-facebook">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path
+                                d="M18 2a1 1 0 0 1 .993 .883l.007 .117v4a1 1 0 0 1 -.883 .993l-.117 .007h-3v1h3a1 1 0 0 1 .991 1.131l-.02 .112l-1 4a1 1 0 0 1 -.858 .75l-.113 .007h-2v6a1 1 0 0 1 -.883 .993l-.117 .007h-4a1 1 0 0 1 -.993 -.883l-.007 -.117v-6h-2a1 1 0 0 1 -.993 -.883l-.007 -.117v-4a1 1 0 0 1 .883 -.993l.117 -.007h2v-1a6 6 0 0 1 5.775 -5.996l.225 -.004h3z" />
                         </svg>
                     </a>
-                    <a href="" class="redes-sociales">
+                    <a  class="redes-sociales" id="linkInstagram" target="_blank">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                             class="icon icon-tabler icons-tabler-outline icon-tabler-brand-instagram">
@@ -223,6 +223,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
         </script>
+
+        <script src="/index.js"></script>
 </body>
 
 </html>
