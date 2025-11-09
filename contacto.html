@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./assets/logo_luis_a_zambrano.png">
+    <title>Contacto - Luis A Zambrano</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!--Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+
+     <header class="container">
+        <section class="container-header navbar navbar-expand-lg">
+            <!-- Logo -->
+            <article class="logo d-flex align-items-center">
+                <img src="./assets/logo_luis_a_zambrano.png" alt="Carpintería Metálica Luis A Zambrano Logo"
+                    class="me-2" />
+            </article>
+
+            <!-- Botón hamburguesa -->
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menú + botón experiencia -->
+            <div class="collapse navbar-collapse justify-content-end align-items-center" id="navbarNav">
+                <ul class="navbar-nav nav-links me-3">
+                    <li class="nav-item"><a class="nav-link" href="/index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                </ul>
+
+                <!-- Botón experiencia (dentro del header para escritorio) -->
+                <article class="experience-button d-none d-lg-block">
+                    40 años de experiencia
+                </article>
+            </div>
+        </section>
+
+        <!-- Botón experiencia (versión móvil, debajo del header) -->
+        <article class="experience-button d-lg-none text-center mt-2">
+            40 años de experiencia
+        </article>
+    </header>
+
+    <main class="mt-5">
+        <section class="hero-contacto">
+    <h1>Demos vida a su proyecto:<br>Solicite un Presupuesto de Carpintería Metálica.</h1>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="container py-5">
+    <div class="row g-4">
+      <!-- Contact Info -->
+      <div class="col-md-5">
+        <h5 class="fw-bold text-dark mb-3">Contacto Directo</h5>
+        <p class="text-muted">Con más de 30 años de experiencia, estamos listos para asesorarle. Contáctenos directamente o visite nuestro taller.</p>
+
+        <div class="contact-card mb-3 d-flex justify-content-between align-items-center">
+          <div class="d-flex align-items-center">
+            <i class="bi bi-telephone-fill contact-icon"></i>
+            <div>
+              <div class="fw-semibold">+57 305 873 7018</div>
+              <small class="text-muted">Teléfono / WhatsApp</small>
+            </div>
+          </div>
+          <a href="https://wa.me/573058737018?text=Hola!%20Quisiera%20solicitar%20un%20presupuesto%20de%20carpinter%C3%ADa%20met%C3%A1lica." 
+                target="_blank" class="btn btn-outline-warning btn-sm">Llamar</a>
+        </div>
+
+        <div class="contact-card mb-4 d-flex justify-content-between align-items-center">
+          <div class="d-flex align-items-center">
+            <i class="bi bi-envelope-fill contact-icon"></i>
+            <div>
+              <div class="fw-semibold">lezaam@hotmail.com</div>
+              <small class="text-muted">Correo Electrónico</small>
+            </div>
+          </div>
+          <a href="mailto:lezaam@hotmail.com" class="btn btn-outline-warning btn-sm">Email</a>
+        </div>
+
+        <!-- Mapa -->
+        <h6 class="fw-bold mb-2">Visite Nuestro Taller</h6>
+        <div class="rounded overflow-hidden shadow-sm" style="height: 230px;">
+          <iframe
+            src="https://www.google.com/maps?q=Carrera+7D+con+calle+156,+Bogotá,+Colombia&output=embed"
+            width="100%" height="230" style="border:0;" allowfullscreen="" loading="lazy">
+          </iframe>
+        </div>
+      </div>
+
+      
+       <!-- Formulario -->
+      <div class="col-md-7">
+        <div class="contact-card">
+          <h5 class="fw-bold text-dark mb-2">Cuéntenos sobre su idea</h5>
+          <p class="text-muted mb-3">Complete el formulario y nos pondremos en contacto.</p>
+          <hr style="width: 60px; border: 2px solid #ff7a00; opacity: 1;">
+
+          <!-- FORMULARIO CON MAILTO -->
+          <form action="mailto:lezaam@hotmail.com" method="POST" enctype="text/plain">
+            <div class="mb-3">
+              <label class="form-label">Nombre Completo</label>
+              <input type="text" name="Nombre Completo" class="form-control" placeholder="John Doe" required>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">Correo Electrónico</label>
+              <input type="email" name="Correo Electrónico" class="form-control" placeholder="usted@email.com" required>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">Teléfono</label>
+              <input type="tel" name="Teléfono" class="form-control" placeholder="+57 300 000 0000">
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">¿En qué podemos ayudarle?</label>
+              <textarea name="Mensaje" class="form-control" rows="3" placeholder="Describa su proyecto o consulta..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn-contact">Enviar Solicitud y Recibir Asesoría</button>
+          </form>
+    </div>
+  </section>
+    </main>
+    
+    <footer>
+        <section class="container">
+            <section class="row">
+                <div class="col-12 col-md-4 col-lg-6">
+                    <div class="d-flex align-items-center">
+                        <svg style="color: #D46A1E;" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24" fill="currentColor"
+                            class="icon icon-tabler icons-tabler-filled icon-tabler-star">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path
+                                d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z" />
+                        </svg>
+                        <h3 class="ms-1 title-footer">Luis A Zambrano</h3>
+                    </div>
+                    <p>Forjando calidad y confianza en carpintería metálica por más de 40 años. Soluciones a la medida
+                        para tus proyectos</p>
+                </div>
+                <div class="col-12 col-md-4 col-lg-3">
+                    <h3 class="title-footer">Navegación</h3>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="">Servicios</a>
+                        </li>
+                        <li>
+                            <a href="">Proyectos</a>
+                        </li>
+                        <li>
+                            <a href="">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-4 col-lg-3">
+                    <h3 class="title-footer">Contacto</h3>
+                    <p>Carrera 7D # 156-81</p>
+                    <p>zamsalamanca@hotmail.com</p>
+                    <p>+57 310 7674581</p>
+                </div>
+            </section>
+            <section class="d-block d-lg-flex justify-content-around mt-4 pt-4 credits-footer">
+                <div>
+                    <p>&copy; 2024 Carpintería Metálica Luis A Zambrano. Todos los derechos reservados.
+                    </p>
+                </div>
+                <div>
+                    <a href="" class="redes-sociales"">
+                        <svg xmlns=" http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-brand-facebook">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path
+                            d="M18 2a1 1 0 0 1 .993 .883l.007 .117v4a1 1 0 0 1 -.883 .993l-.117 .007h-3v1h3a1 1 0 0 1 .991 1.131l-.02 .112l-1 4a1 1 0 0 1 -.858 .75l-.113 .007h-2v6a1 1 0 0 1 -.883 .993l-.117 .007h-4a1 1 0 0 1 -.993 -.883l-.007 -.117v-6h-2a1 1 0 0 1 -.993 -.883l-.007 -.117v-4a1 1 0 0 1 .883 -.993l.117 -.007h2v-1a6 6 0 0 1 5.775 -5.996l.225 -.004h3z" />
+                        </svg>
+                    </a>
+                    <a href="" class="redes-sociales">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-brand-instagram">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M4 8a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" />
+                            <path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+                            <path d="M16.5 7.5v.01" />
+                        </svg>
+                    </a>
+                </div>
+            </section>
+
+        </section>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.js"></script>
+    <!--Bootstrap JS Bundle-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+        </script>
+</body>
+</html>
